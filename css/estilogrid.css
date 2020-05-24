@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 500px  330px;
+    column-gap: 10px;
+    margin-top: 5px;
+    margin-left:5px;
+     
+     }
+    .celda1 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    
+    .celda3 {
+    width: 1026px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    }
+    

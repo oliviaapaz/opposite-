@@ -1,0 +1,328 @@
+.logo {
+  margin-left: 298px;
+}
+
+.video {
+  margin-top: 8px;
+}
+
+
+#lista ul { 
+	font-size: 20px;
+	font-family: serif;
+	}
+
+#lista li {
+  margin-top: 15px;
+  color: white;
+}
+
+ #contenedor {
+ 	margin-bottom: 15px;
+ 	width: 100%;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ }
+
+#contenedor img {
+	width:32%;
+    margin:1px;
+  
+}
+
+#video {
+	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;	
+}
+
+
+form {
+	margin-top: 18px;
+	margin-left:18px;
+}
+
+a {	
+ color: white;
+ text-decoration: none;
+ font-family: sans-serif;
+}
+
+.sandalia {
+	margin-left: 20px;
+	 font-family:serif;
+    font-size: 22px;
+    color: white;
+}
+
+.sandalia2 {
+     margin-left: 20px;
+	 font-family:serif;
+    font-size: 18px;
+    color: white;
+}
+
+.sobre {
+  padding-top: 10px;
+  padding-left: 25px;
+  font-size: 30px;
+  color: white;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns:  1fr 4fr;
+    grid-template-rows: 500px  330px;
+    grid-row-gap:0px;
+    column-gap: 5px; 
+    margin-top: 20px;
+    margin-left: 25px; 
+     }
+
+    .celda1 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    
+    .celda3 {
+    width: 570px;
+    height: 271px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    }
+
+    .celda3 p {
+     margin-top: 18px;
+     margin-left: 15px;
+     font-family:'Times New Roman', Times, serif;
+     color: white;
+    }
+    
+#zoom {
+  width: 300px;
+  transition: transform 1s; 
+}
+
+#zoom:hover {
+    transform: scale(1.5);
+}
+
+#zoom2 {
+  width: 570px;
+  transition: transform 1s; 
+}
+
+#zoom2:hover {
+    transform: scale(1.5);
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap; 
+  width: 100%;
+  justify-content: center;
+}
+
+.galeria img {
+ width: 27%;
+ height: 510px;
+ margin: 15px;
+ border: 2px solid #8E8787;
+ box-shadow: 0 0 0 2px white;
+ 
+}
+@media screen and (max-width:768px) {
+  .galeria img {
+    width:60%;
+  }
+}
+@media screen and (max-width:365px) {
+  .galeria img {
+    width:65%;
+  }
+}
+
+.productos {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+  margin-left: 72px;
+  margin-bottom: 35px;
+}
+
+.productos img {
+  width: 27%;
+  margin: 15px;
+  border: 2px solid #8E8787;
+ box-shadow: 0 0 0 2px white;
+}
+
+@media screen and (max-width:768px) {
+  .productos img {
+    width:60%;
+  }
+}
+@media screen and (max-width:365px) {
+  .productos img {
+    width:65%;
+  }
+}
+
+#zoom3 {
+  width: 60%;
+  transition: transform 1s; 
+  justify-content: center;
+}
+
+#zoom3:hover {
+    transform: scale(1.2);
+}
+
+
+.video {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.video video {
+  width: 86.2%;
+  height: 510px;
+  border: 2px solid #8E8787;
+  box-shadow: 0 0 0 2px white;
+}
+
+.inicio {
+ margin-left: 5px;
+}
+  
+.box{
+  position: absolute;
+  top:65%;
+  left:48.3%;
+  transform : translate(-50% ,-50%);
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background:#fff;
+  color:#000;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #fff;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.footer-bs {
+background-color: black;
+padding: 10px 40px;
+color: rgba(255,255,255,1.00);
+margin-bottom: 20px;
+border-bottom-right-radius: 6px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
